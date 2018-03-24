@@ -13,9 +13,7 @@ spec:
       terminationGracePeriodSeconds: 10
       containers:
       - name: sql2017
-        # image: nileshgule/sqldb
         image: microsoft/mssql-server-linux
-        # command: ["/opt/mssql/bin/sqlservr"]
         ports:
         - name: dbport
           containerPort: 1433
